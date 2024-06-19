@@ -7,4 +7,6 @@ import "bootstrap-vue/dist/bootstrap-vue.css"
 
 const app = createApp(App)
 
+
+app.use(axios)
 app.mount('#app')

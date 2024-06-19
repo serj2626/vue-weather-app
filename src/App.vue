@@ -5,11 +5,9 @@ import Weather from "./components/Weather.vue";
 const city = ref("");
 const showWeather = ref(false);
 
-// const searchWeather = async () => {
-//   showWeather.value = false;
-//   await nextTick();
-//   showWeather.value = true;
-// };
+const searchWeather = async () => {
+  showWeather.value = !false;
+};
 </script>
 
 <template>
@@ -25,13 +23,13 @@ const showWeather = ref(false);
             placeholder="Введите город"
           />
         </div>
-        <button class="btn btn-search btn-primary">
+        <button @click="searchWeather" class="btn btn-search btn-primary">
           Поиск <i class="fas fa-search"></i>
         </button>
       </div>
     </div>
     <br />
-    <Weather></Weather>
+    <Weather :city="city" v-if="showWeather"></Weather>
   </div>
 </template>
 

@@ -5,22 +5,22 @@
             Loading.....
         </div>
         <ul class="p-0">
-            <li class="li-active">
+            <li class="li_active li-active-temp">
                 <div class="py-3">icon</div>
                 <div class="py-3">day</div>
                 <div class="py-3">12oc</div>
             </li>
-            <li class="li-active">
+            <li class="li_active">
                 <div class="py-3">icon</div>
                 <div class="py-3">day</div>
                 <div class="py-3">12oc</div>
             </li>
-            <li class="li-active">
+            <li class="li_active">
                 <div class="py-3">icon</div>
                 <div class="py-3">day</div>
                 <div class="py-3">12oc</div>
             </li>
-            <li class="li-active ">
+            <li class="li_active ">
                 <div class="py-3">icon</div>
                 <div class="py-3">day</div>
                 <div class="py-3">12oc</div>
@@ -32,7 +32,7 @@
 <style scoped>
 .days-tab {
     width: 90%;
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     margin: auto;
 }
@@ -63,7 +63,7 @@ span {
 }
 
 .li_active {
-    background-color: #212730;
+    background-color: #203554;
     color: aliceblue;
     border-radius: 10px;
     margin: 0.5rem;

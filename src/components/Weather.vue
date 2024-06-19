@@ -1,10 +1,18 @@
 <script setup>
 import DaysWeather from "./DaysWeather.vue";
+
+defineProps({
+  city: {
+    type: String,
+    default: "Moscow",
+  }
+})
 </script>
 
 <template>
   <div class="container p-0">
     <div class="d-flex">
+
       <div class="card main-div w-100">
         <div class="p-3">
           <h2 class="mb-1 day">Thursday</h2>
@@ -19,31 +27,32 @@ import DaysWeather from "./DaysWeather.vue";
           </h2>
         </div>
       </div>
-    </div>
-    <div class="card card-2 w-100">
-      <table class="m-4">
-        <tbody>
-          <tr>
-            <th>Humidity</th>
-            <td>humidity</td>
-          </tr>
-          <tr>
-            <th>Humidity</th>
-            <td>humidity</td>
-          </tr>
-          <tr>
-            <th>Humidity</th>
-            <td>humidity</td>
-          </tr>
-        </tbody>
-      </table>
-      
-      <DaysWeather />
 
-      <div id="div_form" class="m-3 d-flex justify-content-center">
-        <form action="">
-          <input type="button" value="Change Location" class="btn btn-primary change-btn">
-        </form>
+      <div class="card card-2 w-100">
+        <table class="m-4">
+          <tbody>
+            <tr>
+              <th>Humidity</th>
+              <td>humidity</td>
+            </tr>
+            <tr>
+              <th>Humidity</th>
+              <td>humidity</td>
+            </tr>
+            <tr>
+              <th>Humidity</th>
+              <td>humidity</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <DaysWeather />
+
+        <div id="div_form" class="m-3 d-flex justify-content-center">
+          <form action="">
+            <input type="button" value="Change Location" class="btn btn-primary change-btn" />
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -63,8 +72,12 @@ h2.mb-1.day {
 }
 
 .main-div {
-  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  background: linear-gradient(90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 35%,
+      rgba(0, 212, 255, 1) 100%);
   color: aliceblue;
+  border-radius: 20px;
 }
 
 .temp {
