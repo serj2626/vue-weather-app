@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import DaysWeather from "./DaysWeather.vue";
+</script>
 
 <template>
   <div class="container p-0">
@@ -35,6 +37,9 @@
           </tr>
         </tbody>
       </table>
+      
+      <DaysWeather />
+
       <div id="div_form" class="m-3 d-flex justify-content-center">
         <form action="">
           <input type="button" value="Change Location" class="btn btn-primary change-btn">
@@ -125,9 +130,11 @@ table,
 tr:hover {
   color: red;
 }
+
 .change-btn {
   background: linear-gradient(to right, #00b09b, #96c93d);
 }
+
 .change-btn:hover {
   transform: scale(0.9);
   transition: 0.1s ease;
